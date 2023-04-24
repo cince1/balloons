@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    margin-bottom: 30px;
+    color: rgb(130, 18, 18);
+}
+
+.balloons{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    gap: 20px;
+}
+
+.balloon{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.balloon:nth-child(2n){
+    background-color: brown;
+    color: brown;
+    font-size: 17px;
+}
+
+.balloon:nth-child(2n+1){
+    background-color: burlywood;
+    color: burlywood;
+    font-size: 17px;
+}
+
+.no-balloons {
+    display:none;
+    color:#ff3300;
+    font-size:100px;
+}
